@@ -29,7 +29,7 @@ function main(dataInput) {
                     console.log(registerCourse1);
                     break;
                 case 'ALLOT':
-                    let courseAlloted22 = courseAlloted(input[1]);
+                    let courseAlloted22 = courseAlloted(input[1],inputLines.length);
                     break;
 
             }

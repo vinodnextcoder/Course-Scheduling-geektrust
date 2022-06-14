@@ -1,6 +1,5 @@
 const registerCourse = (email, course) => {
     if (!email || !course) {
-        console.log('INPUT_DATA_ERROR')
         return 'INPUT_DATA_ERROR';
     }
     let courseDetails = courseList.find(o => o.cId === course);
@@ -15,7 +14,7 @@ const registerCourse = (email, course) => {
         courseId: courseDetails.cId,
         status:true
     }
-    if (registerEmp.length <= courseDetails.maxEmp) {
+    if (registerEmp.length <courseDetails.maxEmp) {
         registerEmp.push(addEmp)
     }
     else {
